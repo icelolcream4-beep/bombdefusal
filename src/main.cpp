@@ -10,17 +10,9 @@ const int wire6 = A5;
 
 
 
-
 void setup() {
   Serial.begin(9600);
 
-
-
-
-
-
-
-  
 }
 
 void loop() {
@@ -30,27 +22,28 @@ void loop() {
   const int wire4status = analogRead(wire4);
   const int wire5status = analogRead(wire5);
   const int wire6status = analogRead(wire6);
-if (wire1status <= 300){
+if (wire1status >= 1){
   Serial.print("wire1 is snipped");
 }
 
-if (wire2status <= 300){
+if (wire2status >= 1){
   Serial.print("wire2 is snipped");
 }
 
-if (wire3status <= 300){
+if (wire3status >= 1){
   Serial.print("wire3 is snipped");
 }
 
-if (wire4status <= 300){
+if (wire4status >= 1){
   Serial.print("wire4 is snipped");
 }
 
-if (wire5status <= 300){
+if (wire5status >= 1){
   Serial.print("wire5 is snipped");
 }
 
-if (wire6status <= 300){
+if (wire6status >= 1){
   Serial.print("wire6 is snipped");
 }
 }
+
